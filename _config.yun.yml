@@ -1,7 +1,10 @@
 mode: auto
 #头像
 avatar:
+  enable: true
   url: /images/avatar.jpg
+  rounded: true
+  opacity: 1
   status:
     enable: true
     emoji: 🦉
@@ -9,11 +12,11 @@ avatar:
 
 #网页图标
 favicon: /favicon.ico
-#
+
 #首页
 banner:
   enable: true
-  title: 一路向南
+  title: 一路向南无所畏惧
   border: true
   cloud:
     enable: true
@@ -21,6 +24,16 @@ banner:
   go_down:
     enable: true
     icon: ri:arrow-down-s-line
+
+# 预览放大图片
+medium_zoom: true
+
+#可爱的鼠标
+cursor:
+  enable: true
+  default: https://cdn.yunyoujun.cn/css/md-cursors/pointer.cur
+  pointer: https://cdn.yunyoujun.cn/css/md-cursors/link.cur
+  text: https://cdn.yunyoujun.cn/css/md-cursors/text.cur
 
 ##要钱的功能
 #reward:
@@ -81,7 +94,15 @@ comment:
 #  reactions-enabled: 1
 #  emit-metadata: 0
 #  theme: light
-#
+
+pages:
+
+say:
+  enable: true
+  api: /data/sentences.json
+  hitokoto:
+    enable: false
+
 #engine_search:
 #  enable: true
 #
@@ -99,30 +120,45 @@ comment:
 #  enable: false
 #  client: ca-pub-2245427233262012
 #
+#目录
+toc:
+  list_number: true
+  max_depth: 6
+  min_depth: 1
+  placeholder: 很遗憾，咱没写啥目录
+  collapse: false
+
+# 版权信息
+creative_commons:
+  license: by-nc-sa
+  post: true
+  language: deed.zh
+  clipboard: false
+
 albums:
   enable: true
 
 girls:
   enable: true
 
-#tags:
-#  动画: crimson
-#  漫画: orange
-#  Parcel: '#21374b'
-#  学习: saddlebrown
-#  MMD: crimson
-#  教程: royalblue
-#  笔记: dimgray
-#  分享: '#0078e7'
-#  随笔: mediumpurple
-#  Blender: '#d04d2d'
-#  Linux: '#2577b1'
-#  昌带: '#ccb44b'
-#  科幻: midnightblue
+tags:
+  动画: crimson
+  漫画: orange
+  Parcel: '#21374b'
+  学习: saddlebrown
+  MMD: crimson
+  教程: royalblue
+  笔记: dimgray
+  分享: '#0078e7'
+  随笔: mediumpurple
+  Blender: '#d04d2d'
+  Linux: '#2577b1'
+  昌带: '#ccb44b'
+  科幻: midnightblue
 #
-#categories:
-#  entj的技术栈: '#FB7299'
-#  enfj的碎碎念: '#FFA500'
+categories:
+  entj的技术栈: '#FB7299'
+  enfj的碎碎念: '#FFA500'
 #
 #menu:
 #  custom:
@@ -131,6 +167,16 @@ girls:
 #    icon: ri:clipboard-line
 #
 #
+#页脚
+footer:
+  since: 2024
+  live_time:
+    enable: false
+    prefix: 本博客已萌萌哒地运行
+    suffix: (●'◡'●)
+    start_time: '2024-02-18T00:00:00'
+
+#社交链接
 social:
   - name: QQ
     # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
